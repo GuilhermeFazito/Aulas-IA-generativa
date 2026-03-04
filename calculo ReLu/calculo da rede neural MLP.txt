@@ -1,0 +1,24 @@
+calculo da rede neural MLP
+
+x = entradas que rede 
+w = valores das camadas ocultas se tiver 5 neurônios vc pega todas os valores dos 5 neurônios
+Z = vc descobre calculando com o Z que já tem pra ver se ele ser pra ativar o neurônio ou não
+
+
+a formula seria = z1 = (w1)(x1) + (w2)(x2) + 0.1
+
+ai com o resultado vc usa o RELU pra descobrir a ativação
+que o Calculo seria A1 = max(0,-0.2)= 0
+vc faz isso para analisar o primeiro valor é o 0 pra comparar com o segundo valor, que o segundo valor é o resultado da conta de cima
+ai vc analise se for < 0 neurônio n ativa, se for > 0 ativa e mantem o valor que vai ser o peso do neurônio
+
+
+pra vc calcular a saida vc faz o calculo:
+z= x1w1 + x2w2 + x3w3 + B
+
+
+ou seja o x1 vai ser o valor do no que o neuronio ta tirando depois que vc ver se o resultado é menor ou maior que 0  e o w é peso do calculo que vc comparou com o 0 
+ai vc terminou com o valor de regressao porem e vc quiser classificar vc vai ter outra função de ativação na saida pra mostrar a probabilidade da classe 
+  
+
+a de regressão é pra prever
